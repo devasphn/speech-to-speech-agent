@@ -1,1 +1,22 @@
+# General application settings
+audio:
+  sample_rate: 16000
+  chunk_size: 1600 # 100ms chunks at 16kHz (1600 samples)
+  vad_threshold: 0.5 # VAD sensitivity (0-1, higher means more strict speech detection)
+  vad_min_speech_duration: 0.1 # Minimum speech duration to consider an utterance
+  vad_min_silence_duration: 0.5 # Minimum silence duration to consider end of utterance
 
+llm:
+  model_name: "meta-llama/Llama-3.1-8B-Instruct"
+  max_new_tokens: 150
+  temperature: 0.7
+  top_p: 0.9
+
+tts:
+  model_name: "sesame/csm-1b"
+  speaker_id: 1 # Default speaker ID for agent (0 or 1 for CSM)
+  speed_factor: 1.0
+  # For voice cloning, reference audio path will be dynamic
+
+web_server:
+  port: 5000
