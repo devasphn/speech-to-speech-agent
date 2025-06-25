@@ -1,5 +1,1 @@
-# Paths to downloaded models (if pre-downloaded, otherwise Hugging Face IDs will be used)
-whisper_path: "openai/whisper-large-v3"
-llama_path: "meta-llama/Llama-3.1-8B-Instruct"
-csm_path: "sesame/csm-1b"
-mimi_path: "sesame/mimi"
+
