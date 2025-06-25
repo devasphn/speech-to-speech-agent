@@ -1,1 +1,15 @@
-
+torch==2.3.0+cu121
+torchaudio==2.3.0+cu121
+transformers==4.41.2
+accelerate
+sentencepiece
+soundfile
+numpy
+scipy
+pydub
+pyyaml
+silero-vad
+Flask
+Flask-SocketIO
+eventlet # For running Flask-SocketIO with a production-ready WSGI server
+python-dotenv
